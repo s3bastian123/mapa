@@ -1,0 +1,288 @@
+/*variables*/
+$black: #000;
+$fondoMenu: #3673fb;
+$hoverMenu: #83a9ff;
+$layerColor: rgba($black,.7);
+$white: #fff;
+/*reset*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+body{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: $white;
+	background: $fondoMenu;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.header{
+	width:100%;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+	.logo{
+		width: 128px;
+		height: 40px;
+		display: inline-block;
+		margin: 15px 25px auto auto;
+		background: $fondoMenu;
+		position: absolute;
+		vertical-align: top;
+		border-radius: 0 20px 20px 0;
+
+		img{
+			width: auto;
+			height: 38px;
+			vertical-align: middle;
+			margin: 1px 15px 1px 5px;
+		}
+	}
+
+	.actMenu{
+		display: none;
+		background: none;
+	}
+
+	.menu{
+		height: 70px;
+		width: auto;
+		font-size: 16px;
+		list-style: none;
+		display: block;
+		box-sizing: content-box;
+		background: $fondoMenu;
+		margin:0 0 0 193px;
+
+		li{
+			width: 19.6%;
+			display: inline-block;
+			box-sizing: border-box;
+			padding: 20px 25px;
+			margin-top: 5px;
+			position: relative;
+
+			&:hover{
+				background: $hoverMenu;
+
+				a{
+					background: $hoverMenu;
+				}
+
+				li, li a{
+					background: $fondoMenu;
+				}
+			}
+
+			.rotate img{
+				vertical-align: top;
+				transform: rotate(180deg);
+				animation-name: rotateu;
+				animation-duration: .4s;
+			}
+
+			img{
+				height: 16px;
+				vertical-align: bottom;
+				transform: rotate(0deg);
+				animation-name: rotated;
+				animation-duration: .4s;
+			}
+		}
+
+		.submenu{
+			width: 100%;
+			height: 200px;
+			overflow: hidden;
+			position: absolute;
+			top: 65px;
+			left: 0;
+			background: $fondoMenu;
+			padding: 0;
+			z-index: 2;
+			animation-name: scaled;
+			animation-duration: .4s;
+
+			&.hide{
+				display: block;
+				height: 0;
+				animation-name: scaleu;
+				animation-duration: .4s;
+			}
+
+			li{
+				width: 100%;
+
+				&:hover{
+					background: $hoverMenu;
+
+					a{
+						background: $hoverMenu;
+					}
+				}
+			}
+
+			a{
+				background: $fondoMenu;
+			}
+		}
+	}
+	.hide{
+		display: none;
+	}
+}
+
+.layer{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: $layerColor;
+	z-index: 1;
+	animation-name: fade;
+  animation-duration: .4s;
+
+	&.hide{
+		display: none;
+	}
+
+
+}
+
+.title{
+	text-align: center;
+	font-size: 40px;
+	margin: 50px 25px 40px 25px;
+}
+
+#mapa{
+	margin-bottom: 30px;
+}
+
+.content{
+	text-align: center;
+}
+.menuCapas, .menuCoordenadas, .marcador{
+	display: inline-block;
+}
+
+.menuCapas a, .menuCoordenadas a, .marcador{
+	display: inline-block;
+	position: relative;
+	padding: 15px 10px 15px 60px;
+	margin-bottom: 20px;
+
+	img{
+		width: auto;
+		position: absolute;
+		top: 5px;
+		left: 10px;
+		height: 40px;
+	}
+}
+
+@media (max-width: 1024px){
+
+	.header{
+		position: fixed;
+
+		.logo{
+			position: relative;
+		}
+
+		.actMenu{
+			width: 40px;
+			height: 40px;
+			display: inline-block;
+			margin: 15px 15px 0 15px;
+
+			img{
+				width: 100%;
+			}
+		}
+
+		.menu{
+			display: block;
+			width: 80%;
+			margin: 0 auto;
+			height: auto;
+
+			li{
+				width: 100%;
+				display: block;
+				text-align: center;
+				padding: 20px 0;
+			}
+
+			.submenu{
+				width: 100%;
+				top: 20px;
+				position: relative;
+				border-bottom: 2px solid $hoverMenu;
+			}
+		}
+
+		.hide{
+			display: none;
+		}
+	}
+
+	.title{
+		font-size: 28px;
+	}
+	.menuCapas, .menuCoordenadas, .marcador{
+		display: block;
+
+		a{
+			display: block;
+			width: 100%;
+			padding: 15px 0;
+			margin: 10px auto;
+			text-align: center;
+		}
+	}
+
+	.marcador{
+		padding: 15px 0;
+	}
+}
+//animaciones
+@keyframes fade {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes scaleu{
+	0%   {height: 200px;}
+	100% {height: 0;}
+}
+
+@keyframes scaled{
+	0%   {height: 0;}
+	100% {height: 200px;}
+}
+
+@keyframes rotated{
+	0%   {transform: rotate(180deg);}
+	100% {transform: rotate(0deg);}
+}
+
+@keyframes rotateu{
+	0%   {transform: rotate(0deg);}
+	100% {transform: rotate(180deg);}
+}

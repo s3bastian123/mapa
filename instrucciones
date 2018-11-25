@@ -1,0 +1,59 @@
+La siguiente prueba debe realizarse en un solo código el cual debe publicarse en un Git y enviar el link final para ser ejecutado. Se entiende que todo lo descrito es la referencia para realizar y no debería requerir ninguna pregunta adicional para entregar el ejercicio.
+
+Puntos a evaluar:
+
+1. La interpretación de indicaciones sin el uso de un mockup o imagen de referencia.
+2. La calidad del markup y toma de decisiones para la construcción del mismo.
+3. La organización de la hoja de estilos.
+4. La calidad del javascript usado y el rendimiento del mismo.
+5. El rendimiento general de todo el código.
+
+Descripción:
+
+1. Crear un index con un menú en el top de la página el cual debe estar fix al top y tener las siguientes características:
+
+* Logo en el lado izquierdo con un ancho de 128px y 40px de alto.
+* El alto del menú es de 70px.
+* 5 elementos de menú: Noticias, Eventos, Calendario, Contáctenos
+* Eventos debe tener un submenú vértical el cual abra al hacer clic con: Hoy, Esta semana, Este mes.
+* El menú debe ser responsive, por debajo de 1024px se considera mobile
+* El menú mobile debe ocupar un 80% del ancho de la página.
+* Los elementos del menú mobile deben ocupar el 100% del menú.
+* El submenú mobile debe abrir hacia abajo empujando con animación.
+* Los links no deben ir a ninguna parte, todo será un solo html.
+* El margen del logo es de 15px top y 25 px left y siempre tendrá una alineación izquierda
+* El margen de cada elemento del menú debe ser de 20px top y bottom + 25px left y right.
+* El margen izquierdo del menú vs el logo debe ser de 50px.
+* Al abrir el submenú en versión desktop o abrir el menú en versión mobile. Se debe cargar un layer sobre todo el contenido el cual debe tener una transparencia de 70% con color negro.
+* Si hace clic sobre el layer el menú o submenú debe cerrarse.
+* El color de fondo del menú es #3673fb
+* El color de hover sobre el menú o submenú es #83a9ff
+* Los elementos con submenu deben tener arrow apuntando hacia abajo en la parte derecha para indicar que es clickeable, al hacer clic debe animarse para que apunte hacia arriba indicando que está desplegado y se puede contraer con otro clic.
+* El tamaño de toda la fuente es 16px y la fuente es Roboto.
+* El color de la fuente es blanco.
+
+2. Contenido del index. Debe existir un título con las siguientes carácterísticas bajo el menú:
+
+* Margin superior al menú de 50px e inferior 40px
+* Debe estar siempre centrado con un margen horizontal de 25px y ocupar el 100% del espacio.
+* El tamaño de fuente es 40px desktop y 28px mobile.
+* El color de la fuente es negro.
+
+3. Contenido del index. Bajo el menú crearemos un mapa de google maps con varias funcionalidades, aquí los estilos son mínimos y todos los botones se pueden colocar de cualquier manera pero bajo el mapa.
+
+* El mapa debe ocupar el 100% del ancho pero mantener un margen lateral de 25px y 30px abajo.
+* El mapa debe cargar Bogotá en su totalidad.
+* La altura debe ser de 450px
+* Por default debe cargar un mapa satelital.
+* Debe existir un botón para cambiar el mapa a su versión roadmap* y otro para volver a la satelital.
+* Debe existir un botón para centrar el mapa en las coordenadas 4.6588766,-74.0948595 con un zoom de 16. También debe existir un botón para volver al zoom inicial y coordenadas iniciales.
+* Debe existir un botón que muestre u oculte un marcador sobre la coordenada: 4.6864072,-74.0531262
+
+
+NOTAS ADICIONALES:
+
+1. El uso de SCSS es opcional y no requerido.
+2. El markup debe contar con el mínimo de accesibilidad.
+3. Todas las animaciones deben tener una velocidad de 0.4 seg.
+4. Los iconos necesarios pueden usarse en imágenes o hechos por estilos.
+5. El uso de librerías o frameworks externos es opcional y la decisión de usar o no usar javascript recae en quien desarrolla la prueba.
