@@ -4,12 +4,12 @@ $fondoMenu: #3673fb;
 $hoverMenu: #83a9ff;
 $layerColor: rgba($black,.7);
 $white: #fff;
-/*reset*/
 
+//font roboto
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
-
+/*reset*/
 body{
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
@@ -27,7 +27,10 @@ ul{
 	margin: 0;
 	text-align: center;
 }
+//----- -----//
 
+
+//header styles
 .header{
 	width:100%;
 	position: sticky;
@@ -146,6 +149,7 @@ ul{
 	}
 }
 
+//layer styles
 .layer{
 	width: 100%;
 	height: 100%;
@@ -164,24 +168,28 @@ ul{
 
 }
 
+//title styles
 .title{
 	text-align: center;
 	font-size: 40px;
 	margin: 50px 25px 40px 25px;
 }
 
-#mapa{
+//iframe styles
+#map{
 	margin-bottom: 30px;
 }
 
+
+//coontent styles (buttons)
 .content{
 	text-align: center;
 }
-.menuCapas, .menuCoordenadas, .marcador{
+.layersMenu, .coordinatesMenu, .marker{
 	display: inline-block;
 }
 
-.menuCapas a, .menuCoordenadas a, .marcador{
+.layersMenu a, .coordinatesMenu a, .marker{
 	display: inline-block;
 	position: relative;
 	padding: 15px 10px 15px 60px;
@@ -196,6 +204,8 @@ ul{
 	}
 }
 
+
+//mobile styles
 @media (max-width: 1024px){
 
 	.header{
@@ -245,7 +255,7 @@ ul{
 	.title{
 		font-size: 28px;
 	}
-	.menuCapas, .menuCoordenadas, .marcador{
+	.layersMenu, .coordinatesMenu, .marker{
 		display: block;
 
 		a{
@@ -257,31 +267,39 @@ ul{
 		}
 	}
 
-	.marcador{
+	.marker{
 		padding: 15px 0;
 	}
 }
-//animaciones
+
+
+//animations
+
+
 @keyframes fade {
   0%   {opacity: 0;}
   100% {opacity: 1;}
 }
 
+//scale up
 @keyframes scaleu{
 	0%   {height: 200px;}
 	100% {height: 0;}
 }
 
+//scale down
 @keyframes scaled{
 	0%   {height: 0;}
 	100% {height: 200px;}
 }
 
+//scale up
 @keyframes rotated{
 	0%   {transform: rotate(180deg);}
 	100% {transform: rotate(0deg);}
 }
 
+//rotate arrow
 @keyframes rotateu{
 	0%   {transform: rotate(0deg);}
 	100% {transform: rotate(180deg);}

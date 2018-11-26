@@ -1,6 +1,6 @@
 /*variables*/
-/*reset*/
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+/*reset*/
 /* line 13, ../scss/style.scss */
 body {
   margin: 0;
@@ -22,7 +22,7 @@ ul {
   text-align: center;
 }
 
-/* line 31, ../scss/style.scss */
+/* line 34, ../scss/style.scss */
 .header {
   width: 100%;
   position: sticky;
@@ -30,7 +30,7 @@ ul {
   left: 0;
   z-index: 2;
 }
-/* line 38, ../scss/style.scss */
+/* line 41, ../scss/style.scss */
 .header .logo {
   width: 128px;
   height: 40px;
@@ -41,19 +41,19 @@ ul {
   vertical-align: top;
   border-radius: 0 20px 20px 0;
 }
-/* line 48, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 .header .logo img {
   width: auto;
   height: 38px;
   vertical-align: middle;
   margin: 1px 15px 1px 5px;
 }
-/* line 56, ../scss/style.scss */
+/* line 59, ../scss/style.scss */
 .header .actMenu {
   display: none;
   background: none;
 }
-/* line 61, ../scss/style.scss */
+/* line 64, ../scss/style.scss */
 .header .menu {
   height: 70px;
   width: auto;
@@ -64,7 +64,7 @@ ul {
   background: #3673fb;
   margin: 0 0 0 193px;
 }
-/* line 71, ../scss/style.scss */
+/* line 74, ../scss/style.scss */
 .header .menu li {
   width: 19.6%;
   display: inline-block;
@@ -73,26 +73,26 @@ ul {
   margin-top: 5px;
   position: relative;
 }
-/* line 79, ../scss/style.scss */
+/* line 82, ../scss/style.scss */
 .header .menu li:hover {
   background: #83a9ff;
 }
-/* line 82, ../scss/style.scss */
+/* line 85, ../scss/style.scss */
 .header .menu li:hover a {
   background: #83a9ff;
 }
-/* line 86, ../scss/style.scss */
+/* line 89, ../scss/style.scss */
 .header .menu li:hover li, .header .menu li:hover li a {
   background: #3673fb;
 }
-/* line 91, ../scss/style.scss */
+/* line 94, ../scss/style.scss */
 .header .menu li .rotate img {
   vertical-align: top;
   transform: rotate(180deg);
   animation-name: rotateu;
   animation-duration: .4s;
 }
-/* line 98, ../scss/style.scss */
+/* line 101, ../scss/style.scss */
 .header .menu li img {
   height: 16px;
   vertical-align: bottom;
@@ -100,7 +100,7 @@ ul {
   animation-name: rotated;
   animation-duration: .4s;
 }
-/* line 107, ../scss/style.scss */
+/* line 110, ../scss/style.scss */
 .header .menu .submenu {
   width: 100%;
   height: 200px;
@@ -114,35 +114,35 @@ ul {
   animation-name: scaled;
   animation-duration: .4s;
 }
-/* line 120, ../scss/style.scss */
+/* line 123, ../scss/style.scss */
 .header .menu .submenu.hide {
   display: block;
   height: 0;
   animation-name: scaleu;
   animation-duration: .4s;
 }
-/* line 127, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 .header .menu .submenu li {
   width: 100%;
 }
-/* line 130, ../scss/style.scss */
+/* line 133, ../scss/style.scss */
 .header .menu .submenu li:hover {
   background: #83a9ff;
 }
-/* line 133, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
 .header .menu .submenu li:hover a {
   background: #83a9ff;
 }
-/* line 139, ../scss/style.scss */
+/* line 142, ../scss/style.scss */
 .header .menu .submenu a {
   background: #3673fb;
 }
-/* line 144, ../scss/style.scss */
+/* line 147, ../scss/style.scss */
 .header .hide {
   display: none;
 }
 
-/* line 149, ../scss/style.scss */
+/* line 153, ../scss/style.scss */
 .layer {
   width: 100%;
   height: 100%;
@@ -154,42 +154,42 @@ ul {
   animation-name: fade;
   animation-duration: .4s;
 }
-/* line 160, ../scss/style.scss */
+/* line 164, ../scss/style.scss */
 .layer.hide {
   display: none;
 }
 
-/* line 167, ../scss/style.scss */
+/* line 172, ../scss/style.scss */
 .title {
   text-align: center;
   font-size: 40px;
   margin: 50px 25px 40px 25px;
 }
 
-/* line 173, ../scss/style.scss */
-#mapa {
+/* line 179, ../scss/style.scss */
+#map {
   margin-bottom: 30px;
 }
 
-/* line 177, ../scss/style.scss */
+/* line 185, ../scss/style.scss */
 .content {
   text-align: center;
 }
 
-/* line 180, ../scss/style.scss */
-.menuCapas, .menuCoordenadas, .marcador {
+/* line 188, ../scss/style.scss */
+.layersMenu, .coordinatesMenu, .marker {
   display: inline-block;
 }
 
-/* line 184, ../scss/style.scss */
-.menuCapas a, .menuCoordenadas a, .marcador {
+/* line 192, ../scss/style.scss */
+.layersMenu a, .coordinatesMenu a, .marker {
   display: inline-block;
   position: relative;
   padding: 15px 10px 15px 60px;
   margin-bottom: 20px;
 }
-/* line 190, ../scss/style.scss */
-.menuCapas a img, .menuCoordenadas a img, .marcador img {
+/* line 198, ../scss/style.scss */
+.layersMenu a img, .coordinatesMenu a img, .marker img {
   width: auto;
   position: absolute;
   top: 5px;
@@ -198,62 +198,62 @@ ul {
 }
 
 @media (max-width: 1024px) {
-  /* line 201, ../scss/style.scss */
+  /* line 211, ../scss/style.scss */
   .header {
     position: fixed;
   }
-  /* line 204, ../scss/style.scss */
+  /* line 214, ../scss/style.scss */
   .header .logo {
     position: relative;
   }
-  /* line 208, ../scss/style.scss */
+  /* line 218, ../scss/style.scss */
   .header .actMenu {
     width: 40px;
     height: 40px;
     display: inline-block;
     margin: 15px 15px 0 15px;
   }
-  /* line 214, ../scss/style.scss */
+  /* line 224, ../scss/style.scss */
   .header .actMenu img {
     width: 100%;
   }
-  /* line 219, ../scss/style.scss */
+  /* line 229, ../scss/style.scss */
   .header .menu {
     display: block;
     width: 80%;
     margin: 0 auto;
     height: auto;
   }
-  /* line 225, ../scss/style.scss */
+  /* line 235, ../scss/style.scss */
   .header .menu li {
     width: 100%;
     display: block;
     text-align: center;
     padding: 20px 0;
   }
-  /* line 232, ../scss/style.scss */
+  /* line 242, ../scss/style.scss */
   .header .menu .submenu {
     width: 100%;
     top: 20px;
     position: relative;
     border-bottom: 2px solid #83a9ff;
   }
-  /* line 240, ../scss/style.scss */
+  /* line 250, ../scss/style.scss */
   .header .hide {
     display: none;
   }
 
-  /* line 245, ../scss/style.scss */
+  /* line 255, ../scss/style.scss */
   .title {
     font-size: 28px;
   }
 
-  /* line 248, ../scss/style.scss */
-  .menuCapas, .menuCoordenadas, .marcador {
+  /* line 258, ../scss/style.scss */
+  .layersMenu, .coordinatesMenu, .marker {
     display: block;
   }
-  /* line 251, ../scss/style.scss */
-  .menuCapas a, .menuCoordenadas a, .marcador a {
+  /* line 261, ../scss/style.scss */
+  .layersMenu a, .coordinatesMenu a, .marker a {
     display: block;
     width: 100%;
     padding: 15px 0;
@@ -261,8 +261,8 @@ ul {
     text-align: center;
   }
 
-  /* line 260, ../scss/style.scss */
-  .marcador {
+  /* line 270, ../scss/style.scss */
+  .marker {
     padding: 15px 0;
   }
 }
